@@ -223,7 +223,7 @@ string BardChoices[4]
 
 
 
-typedef void WhichOne();
+
 void AttackChoices::WarriorsChoices()
 {
 	for (int w = 0; w < (sizeof(WarriorChoices) / sizeof(*WarriorChoices)); w++) // Note: (sizeof(Class) / sizeof(*Class)) determines the correct size of the array (in case you want to change the array later)
@@ -311,7 +311,7 @@ void AttackChoices::BardsChoices()
 
 void AttackChoices::CheckClassForChoices()
 {
-	WhichOne array[] = {WarriorsChoices,};
+
 
 	for (int c = 0; c < (sizeof(Class) / sizeof(*Class)); c++)
 	{
